@@ -34,9 +34,9 @@ webpack_encore:
     # Put in config/packages/prod/webpack_encore.yaml
     # cache: true
 
-framework:
-    assets:
-        json_manifest_path: '%kernel.project_dir%/public/build/manifest.json'
+# framework:
+#     assets:
+#         json_manifest_path: '%kernel.project_dir%/public/build/manifest.json'
 
 #when@prod:
 #    webpack_encore:

@@ -1,3 +1,34 @@
-#index:
-#    path: /
-#    controller: App\Controller\DefaultController::index
+# config/routes.yaml
+
+homepage:
+  path: /
+  controller: App\Controller\BlogController::index
+
+article_add:
+  path: /add
+  controller: App\Controller\BlogController::add
+
+article_show:
+  path: /show/{id}
+  controller: App\Controller\BlogController::show
+
+article_edit:
+  path: /edit/{id}
+  controller: App\Controller\BlogController::edit
+  requirements:
+    id: '\d+'
+
+article_remove:
+  path: /remove/{id}
+  controller: App\Controller\BlogController::remove
+  requirements:
+    id: '\d+'
+
+
+register:
+  path: /register
+  controller: App\Controller\RegistrationController::register
+
+admin:
+  path: /admin
+  controller: App\Controller\BlogController::admin
